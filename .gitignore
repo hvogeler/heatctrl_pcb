@@ -1,0 +1,46 @@
+# KiCad backup files
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*-backups/
+jlcpcb/
+production/
+gerbers/
+
+# KiCad lock files
+*.lck
+
+# KiCad auto-save files
+*-save.kicad_sch
+*-save.kicad_pcb
+*~
+
+# Footprint info cache
+fp-info-cache
+
+# Netlist files (generated)
+*.net
+
+# KiCad 5 and earlier backup formats
+*.bak
+*.bck
+_autosave-*
+
+# Generated manufacturing files (uncomment if you want to ignore these)
+# Gerbers/
+*.gbr
+*.drl
+*.gbrjob
+
+# PDF exports (uncomment if you want to ignore these)
+# *.pdf
+
+# STEP/3D exports (uncomment if you want to ignore these)
+# *.step
+# *.stp
+
+# macOS
+.DS_Store
+
+# Rescue libraries (created when components are missing)
+*-rescue.kicad_sym
+*-rescue.lib
