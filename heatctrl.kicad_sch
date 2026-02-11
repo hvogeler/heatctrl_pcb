@@ -4287,7 +4287,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 216.408 63.5 90)
 			(effects
 				(font
@@ -4564,7 +4564,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:D_0805"
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 216.408 52.07 90)
 			(effects
 				(font
@@ -4886,7 +4886,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:D_0805"
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 208.788 52.07 90)
 			(effects
 				(font
@@ -5278,7 +5278,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm"
+		(property "Footprint" "Package_DIP:DIP-28_W7.62mm_Socket"
 			(at 172.72 92.71 0)
 			(effects
 				(font
@@ -5637,7 +5637,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 208.788 63.5 90)
 			(effects
 				(font
