@@ -3169,6 +3169,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 138.43) (xy 209.55 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "614593be-5384-4112-be59-502dc062138b")
+	)
+	(wire
+		(pts
 			(xy 209.55 88.9) (xy 209.55 73.66)
 		)
 		(stroke
@@ -3399,6 +3409,26 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 144.78) (xy 220.98 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8532155-0d16-4e2a-9b10-3e07613e609b")
+	)
+	(wire
+		(pts
+			(xy 217.17 138.43) (xy 220.98 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa5fe8cc-0eea-4b23-becd-c6b6ccc056d6")
+	)
+	(wire
+		(pts
 			(xy 134.62 80.01) (xy 134.62 62.23)
 		)
 		(stroke
@@ -3556,6 +3586,16 @@
 			(type default)
 		)
 		(uuid "cd43f69a-f54f-446f-9215-eb4d2f15db83")
+	)
+	(wire
+		(pts
+			(xy 205.74 144.78) (xy 209.55 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdb6ef0e-15b9-4cac-8df0-c0bdd98686ac")
 	)
 	(wire
 		(pts
@@ -3900,6 +3940,50 @@
 		(uuid "c23cba48-4e19-4c08-98d9-ab7d76608277")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 127 127.2033 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 205.74 138.43 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ebdcedc2-839c-4d57-959a-417a57c01b98")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 199.2472 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 205.74 144.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ee9f2bd6-4afa-4585-a3e2-9065ed496033")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 199.1867 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4287,7 +4371,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 216.408 63.5 90)
 			(effects
 				(font
@@ -4314,7 +4398,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" " C22962"
+		(property "LCSC Part #" "C22962"
 			(at 214.63 63.5 90)
 			(effects
 				(font
@@ -4333,6 +4417,73 @@
 			(project "heatctrl"
 				(path "/7efeb4ea-5c64-42ad-b0cc-b57351eb5c50"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 220.98 144.78 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4accfe7b-5ed7-42a0-9dba-607546f4b676")
+		(property "Reference" "#PWR015"
+			(at 217.17 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 224.79 144.7799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 220.98 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59645351-493d-4823-a796-69a88402f14f")
+		)
+		(instances
+			(project "heatctrl"
+				(path "/7efeb4ea-5c64-42ad-b0cc-b57351eb5c50"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -4538,6 +4689,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 220.98 138.43 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a5faa9b-7b44-4ae6-b17d-b63cb6698170")
+		(property "Reference" "#PWR014"
+			(at 217.17 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 224.79 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 220.98 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba1fd33c-3391-4aa3-aeae-615a89029b8d")
+		)
+		(instances
+			(project "heatctrl"
+				(path "/7efeb4ea-5c64-42ad-b0cc-b57351eb5c50"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Diodes:LED,0805,Red")
 		(at 214.63 52.07 180)
 		(unit 1)
@@ -4564,7 +4782,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 216.408 52.07 90)
 			(effects
 				(font
@@ -4886,7 +5104,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 208.788 52.07 90)
 			(effects
 				(font
@@ -5003,7 +5221,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2297"
+		(property "LCSC Part #" "C84256"
 			(at 207.01 52.07 0)
 			(effects
 				(font
@@ -5253,13 +5471,89 @@
 		)
 	)
 	(symbol
-		(lib_id "HV_SYM01:MCP23017_SS")
-		(at 147.32 97.79 90)
+		(lib_id "Device:R")
+		(at 213.36 144.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(uuid "9af870d6-c725-452f-bce4-0d55cbda6c3c")
+		(property "Reference" "R3"
+			(at 213.614 142.494 90)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 213.36 146.812 90)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 213.36 143.002 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706223213461504"
+			(at 213.36 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23162"
+			(at 213.36 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e98977b-30a5-4e7a-8e2f-6dbf7232ebe5")
+		)
+		(pin "2"
+			(uuid "8ec00ea2-446b-4814-aeab-34876576fdcd")
+		)
+		(instances
+			(project "heatctrl"
+				(path "/7efeb4ea-5c64-42ad-b0cc-b57351eb5c50"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HV_SYM01:MCP23017_SS")
+		(at 147.32 97.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a007b87b-8bba-49d4-8c11-99ff70298f4b")
 		(property "Reference" "U2"
@@ -5307,7 +5601,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C558584"
+		(property "LCSC Part #" ""
 			(at 147.32 97.79 0)
 			(effects
 				(font
@@ -5614,6 +5908,82 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 213.36 138.43 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b29818ab-a2c1-4d1c-8ef2-f731fe6df5bb")
+		(property "Reference" "R2"
+			(at 213.614 136.144 90)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 213.36 140.462 90)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 213.36 136.652 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706223213461504"
+			(at 213.36 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23162"
+			(at 213.36 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3cfe04d6-48bf-4e08-9462-bb6d8ee345a0")
+		)
+		(pin "2"
+			(uuid "f5651c7f-9c09-4224-9a15-385bc16fd8db")
+		)
+		(instances
+			(project "heatctrl"
+				(path "/7efeb4ea-5c64-42ad-b0cc-b57351eb5c50"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 207.01 63.5 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5637,7 +6007,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 208.788 63.5 90)
 			(effects
 				(font
@@ -5664,7 +6034,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" " C22962"
+		(property "LCSC Part #" "C22962"
 			(at 207.01 63.5 90)
 			(effects
 				(font
